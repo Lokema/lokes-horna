@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #990d35;
+
+  display: flex;
+  justify-content: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*CONTAINER FOR EVERYTHING, MAKES IT EASIER TO HAVE MARGIN ON THE SIDES*/
+.big-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/*STILEN SOM MÅNGA DIVAR KOMMER DELA PÅ*/
+.header-btn,
+.membership-cards,
+.bottom-btn {
+  background-color: #d52941;
+  color: #fff8e8;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-btn {
+  flex: 1 1 25%;
+  margin: 10px;
+  text-align: center;
+  padding: 8px 0px;
+  box-shadow: 0px 0px 3px #d52941;
+
+  transition: transform 0.2 ease-in-out;
+}
+
+.header-btn:hover {
+  transform: scale(1.05);
+  background-color: #b92438;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+}
+
+.img-content {
+  background-image: url("../images/image1.jpg");
+  background-size: cover;
+  flex: 1 1 70%;
+
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 0px 3px #d52941;
+
+  margin: 5px;
+}
+
+.img-content .div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 30px;
+}
+
+.img-content p,
+.img-content h1 {
+  color: #fff;
+  text-shadow: 0px 0px 4px black;
+}
+
+.img-content h1 {
+  font-size: 3.4em;
+}
+
+/*DETTA ÄR CONTAINERN FÖR KORTEN*/
+.membership {
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.membership-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 0px 3px #d52941;
+  margin: 5px;
+}
+
+.membership-cards h1 {
+  font-weight: 400;
+}
+
+.membership-cards p {
+  font-weight: 700;
+}
+
+/*STILEN FÖR KNAPPAR*/
+.btn {
+  background-color: #fff8e8;
+
+  text-decoration: none;
+  padding: 8px 3px;
+  color: #222;
+
+  width: 100px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  border-radius: 20px;
+}
+
+.bottom-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+
+.bottom-btn {
+  flex: 1 1 23%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 3px;
+
+  box-shadow: 0px 0px 3px #d52941;
+}
+
+.bottom-btn p {
+  margin-bottom: 20px;
+}
+
+/*SPAN-EN ANVÄNDS TILL LOGONA*/
+.bottom-container span {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bottom-btn {
+    flex: 1 1 32%;
+    margin: 7px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .header {
+    flex-direction: column;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+
+  .membership {
+    flex-direction: row;
+  }
+
+  .membership-cards {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+
+  .bottom-btn {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .membership-cards {
+    flex: 1 1 99%;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .bottom-btn {
+    flex: 1 1 99%;
+  }
+}
