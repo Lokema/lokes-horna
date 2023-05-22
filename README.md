@@ -1,5 +1,5 @@
 # lokes-horna
-Webbsida till webbutveckling 2 och webbserverporgrammering 1 o 2
+Webbsida till webbutveckling 2 och webbserverprogrammering 1 o 2
 
 # instruktioner
 - Du behöver en php server, använde xampp.
